@@ -18,7 +18,6 @@ public class HandlingDropDown {
         sl.selectByVisibleText("Python");
         Thread.sleep(1000);
         sl.selectByValue("js");
-        Thread.sleep(3000);
         driver.quit();
 
     }
