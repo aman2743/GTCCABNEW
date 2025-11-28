@@ -20,7 +20,7 @@ public class ScrrenshotTestBase64 {
         TakesScreenshot ts=(TakesScreenshot) driver;
         String base64= ts.getScreenshotAs(OutputType.BASE64);
          byte[] arrayByte=Base64.getDecoder().decode(base64);
-        File destFile=new File("C:\\Users\\HP\\Desktop\\Screenshot\\image3.jpg");
+        File destFile=new File("C:\\Users\\HP\\Desktop\\Screenshot\\image3333.jpg");
         try (FileOutputStream fos = new FileOutputStream(destFile)) {
             fos.write(arrayByte);
         }catch(FileNotFoundException fe){
