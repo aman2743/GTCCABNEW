@@ -19,6 +19,7 @@ public class HandlingDropDown {
         Thread.sleep(1000);
         sl.selectByValue("js");
         driver.quit();
+        System.out.println();
 
     }
 }
