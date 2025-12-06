@@ -16,9 +16,10 @@ public class DynamicFluentWait {
         driver.manage().window().maximize();
         FluentWait<WebDriver> wait=new FluentWait<WebDriver>(driver)
                 .withTimeout(Duration.ofSeconds(15))
-                .pollingEvery(Duration.ofSeconds(1))
-                .ignoring(NoSuchFieldException.class)
+                .pollingEvery(Duration.ofSeconds(2))
                 .withMessage("Using Fluent wait");
+//              .ignoring(NoSuchElementException.class)
+
 
         driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
         driver.findElement(By.xpath("//button[@id='btn2']")).click();
