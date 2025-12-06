@@ -12,7 +12,7 @@ import org.openqa.selenium.safari.SafariDriver;
 public class BrowserLaunch {
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("http://testfire.net/login.jsp");
         driver.manage().window().maximize();
 //        driver.findElement(By.xpath("//*[@id=\"uid\"]")).sendKeys("jsmith");
@@ -20,8 +20,8 @@ public class BrowserLaunch {
 //        driver.findElement(By.xpath("//*[@id=\"login\"]/table/tbody/tr[3]/td[2]/input")).click();
 //        Thread.sleep(1000);
 //        driver.findElement(By.xpath("//*[@id=\"LoginLink\"]/font")).click();
-         WebElement we= driver.findElement(By.id("uid"));
+        WebElement we = driver.findElement(By.id("uid"));
 //         we.sendKeys("jsmith");
         driver.findElement(By.id("uid")).sendKeys("jsmith");
-  }
+    }
 }
