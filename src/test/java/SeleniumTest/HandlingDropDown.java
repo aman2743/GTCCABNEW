@@ -20,6 +20,7 @@ public class HandlingDropDown {
         sl.selectByValue("js");
         driver.quit();
         System.out.println();
+        System.out.println();
 
     }
 }
