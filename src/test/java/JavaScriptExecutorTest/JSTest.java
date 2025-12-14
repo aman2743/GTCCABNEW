@@ -19,6 +19,5 @@ public class JSTest {
             throw new RuntimeException(e);
         }
         js.executeScript("document.getElementsByName('btnSubmit')[0].click();");
-
     }
 }
