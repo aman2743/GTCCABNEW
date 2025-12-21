@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Base64;
 
-public class ScrrenshotTestBase64 {
+public class ScreenshotTestBase64 {
     public static void main(String[] args) throws IOException {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
