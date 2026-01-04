@@ -1,12 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Test Suite">
+<suite name="Test Suite" >
  <test name="First Test">
+     <groups>
+         <run>
+             <include name="windows"/>
+         </run>
+     </groups>
      <classes>
-       <class name="testNGPKG1.TestLogin">
-           <methods>
-                <include name="TestLoginPage"/>
-           </methods>
-       </class>
+       <class name="GroupsInTestNG.A1"/>
+         <class name="GroupsInTestNG.A2"/>
+         <class name="GroupsInTestNG.B1"/>
+         <class name="GroupsInTestNG.B2"/>
+         <class name="GroupsInTestNG.D1"/>
+         <class name="GroupsInTestNG.D2"/>
      </classes>
  </test>
 </suite>
