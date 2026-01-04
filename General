@@ -1,0 +1,14 @@
+Assertion
+1- Hard Assertion
+2- Soft Assertion
+Grouping -100
+@Sanity (5), @Regression(25), @Smoke(15)
+@Test (100)
+Smoke Test
+Functional Test
+Regression Test
+Daily Build
+Weekly Build
+Sanity
+Windows
+IOS
