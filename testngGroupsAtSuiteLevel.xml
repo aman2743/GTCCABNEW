@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" >
+    <groups>
+        <run>
+            <include name="regression"/>
+        </run>
+    </groups>
+ <test name="Test1">
+
+     <classes>
+        <class name="GroupsInTestNG.A1"/>
+     </classes>
+ </test>
+    <test name="Test2">
+        <classes>
+            <class name="GroupsInTestNG.B2"/>
+        </classes>
+    </test>
+</suite>

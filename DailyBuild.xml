@@ -2,10 +2,17 @@
 <suite name="Test Suite" >
  <test name="First Test">
      <groups>
+         <define name="DailyBuild">
+             <include name="sanity"/>
+             <include name="smoke"/>
+         </define>
          <run>
-             <exclude name="regression"/>
+             <include name="DailyBuild"/>
          </run>
      </groups>
+<!--     <packages>-->
+<!--         <package name="GroupsInTestNG"/>-->
+<!--     </packages>-->
      <classes>
         <class name="GroupsInTestNG.A1"/>
          <class name="GroupsInTestNG.A2"/>

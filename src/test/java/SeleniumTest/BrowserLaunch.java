@@ -13,7 +13,8 @@ public class BrowserLaunch {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("http://testfire.net/login.jsp");
+        driver.navigate().to("http://testfire.net/login.jsp");
+//        driver.get("http://testfire.net/login.jsp");
         driver.manage().window().maximize();
 //        driver.findElement(By.xpath("//*[@id=\"uid\"]")).sendKeys("jsmith");
 //        driver.findElement(By.xpath("//*[@id=\"passw\"]")).sendKeys("demo1234");
@@ -23,5 +24,14 @@ public class BrowserLaunch {
         WebElement we = driver.findElement(By.id("uid"));
 //         we.sendKeys("jsmith");
         driver.findElement(By.id("uid")).sendKeys("jsmith");
+        driver.findElement(By.id("passw")).sendKeys("demo1234");
+        driver.findElement(By.name("btnSubmit")).click();
+        Thread.sleep(1000);
+        driver.navigate().refresh();
+        Thread.sleep(1000);
+        driver.navigate().back();
+        Thread.sleep(1000);
+        driver.navigate().forward();
+
     }
 }
