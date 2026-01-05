@@ -3,7 +3,7 @@ package GroupsInTestNG;
 import org.testng.annotations.Test;
 
 
-public class D1 {
+public class E2 {
     @Test (groups = {"smoke"})
     public void M9(){
         System.out.println("M9->D1");
