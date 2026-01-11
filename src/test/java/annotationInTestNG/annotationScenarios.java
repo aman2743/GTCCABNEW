@@ -22,7 +22,7 @@ public class annotationScenarios {
         driver.manage().window().maximize();
         js=(JavascriptExecutor) driver;
     }
-    @Test
+    @Test (timeOut = 100)
     public void userLogin(){
         driver.get("http://testfire.net/login.jsp");
         js.executeScript("document.getElementById('uid').value='jsmith';");
