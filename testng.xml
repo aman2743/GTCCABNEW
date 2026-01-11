@@ -2,9 +2,9 @@
 <suite name="Test Suite" >
  <test name="First Test">
      <classes>
-        <class name="dataProvider.DataProviderScenarioArray">
+        <class name="InvocationTest.InvocationCountTest">
             <methods>
-                <include name="userLogin"/>
+                <include name="RandomUser"/>
             </methods>
        </class>
      </classes>

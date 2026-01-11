@@ -29,12 +29,14 @@ public class DataProviderScenarioArray {
         driver.quit();
   }
         @DataProvider(name="LoginTestData")
-        public String[][] LoginTestData(){
-            String[][] data=new String[2][2];
-            data[0][0]="jsmith";
-            data[0][1]="demo1234";
-            data[1][0]="admin";
-            data[1][1]="admin123";
+        public Object[][] LoginTestData(){
+            String[][] data=new String[][]{
+                    {"jsmith","demo1234"},
+                    {"jsmith","test232"},
+                    {"testas","demo1234"},
+                    {" ","demo1234"},
+                    {"jsmith"," "}
+            };
             return data;
         }
 }
