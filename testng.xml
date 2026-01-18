@@ -2,9 +2,9 @@
 <suite name="Test Suite" >
  <test name="First Test">
      <classes>
-        <class name="InvocationTest.InvocationCountTest">
+        <class name="frameWorkBasic.LoginTest">
             <methods>
-                <include name="RandomUser"/>
+                <include name="loginTestMethod"/>
             </methods>
        </class>
      </classes>
