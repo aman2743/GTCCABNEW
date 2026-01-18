@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class BasicDataProvider {
     @Test(dataProvider = "dp1")
-    public void LoginNew(String s,String s1){
+    public void LoginNew(String s){
         System.out.println(s);
     }
 
